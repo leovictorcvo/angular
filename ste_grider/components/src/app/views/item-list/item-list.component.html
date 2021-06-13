@@ -1,0 +1,17 @@
+<div class="ui items">
+  <div class="item" *ngFor="let item of items">
+    <div class="image">
+      <img *ngIf="item.image" [src]="item.image">
+      <img *ngIf="!item.image" src="/assets/images/wireframe/image.png">
+    </div>
+    <div class="content">
+      <a class="header">{{item.title}}</a>
+      <div class="meta">
+        <span>{{item.description}}</span>
+      </div>
+      <div class="description" wfd-id="242">
+        <p></p>
+      </div>
+    </div>
+  </div>
+</div>

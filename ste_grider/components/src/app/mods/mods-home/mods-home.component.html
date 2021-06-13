@@ -1,0 +1,11 @@
+<app-divider>Modal</app-divider>
+<button class="ui button" (click)="handleToggleVisibility()">Show modal!</button>
+<app-modal (close)="handleToggleVisibility()" *ngIf="showModal">
+  <div modalTitle>This is the title</div>
+  <p>Some content for modal window should go right here!</p>
+  <ng-container modalFooter>
+    <button class="ui button" (click)="handleToggleVisibility()">Close me!</button>
+  </ng-container>
+</app-modal>
+<app-divider>Accordion</app-divider>
+<app-accordion [data]="questions"></app-accordion>
